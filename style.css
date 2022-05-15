@@ -6,18 +6,18 @@ esta pagina equivale a 1rem*/
 
 /*=====GERAL==============================================*/
 
-/*seletor universal*/
+
 * {
-  /*deixará a pagina sem margem */
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*seletor universal*/
+  /*deixará a pagina sem margem */
 }
-/*seletor root introduz cores que podem ser modificados em
-todo o corpo da pagina a partir do proprio root
-e fonte padrão da pagina é mudada em porcentagem equivalente a 10pixels.*/
+
 :root {
-  --hue: 190;
+  --hue: 205;
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
@@ -32,11 +32,14 @@ e fonte padrão da pagina é mudada em porcentagem equivalente a 10pixels.*/
   font-size: 62.5%; /* 1rem = 10px */
 
   --nav-height: 7.2rem;
+  /*seletor root introduz cores que podem ser modificados em
+todo o corpo da pagina a partir do proprio root
+e fonte padrão da pagina é mudada em porcentagem equivalente a 10pixels.*/
 }
 
 html {
-  /*move o scroll suavemente*/
   scroll-behavior: smooth;
+  /*move o scroll suavemente*/
 }
 
 html,
@@ -45,9 +48,7 @@ body {
   height: 100%;
 }
 
-/*seletor body modifica a fonte para DM Sans,
-muda o tamanho da fonte para 16pixels(relativos)
-e alinha o texto ao centro.*/
+
 body {
   font-family: 'DM Sans';
   font-size: 1.6rem;
@@ -57,6 +58,9 @@ body {
   overflow: overlay;
 
   background-color: var(--bg-light);
+  /*seletor body modifica a fonte para DM Sans,
+muda o tamanho da fonte para 16pixels(relativos)
+e alinha o texto ao centro.*/
 }
 
 .wrapper {
@@ -78,10 +82,7 @@ section {
 }
 
 section header h4 {
-  /*seletor h4 terá a fonte de 14pixels(relativos)
-puxa a cor variavel do seletor root da pagina
-e o espaçamento da margem inferior externa terá 16pixels.
-#home h4 {*/
+  
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 150%;
@@ -91,6 +92,10 @@ e o espaçamento da margem inferior externa terá 16pixels.
   text-transform: uppercase;
 
   margin-bottom: 1.6rem;
+  /*seletor h4 terá a fonte de 14pixels(relativos)
+puxa a cor variavel do seletor root da pagina
+e o espaçamento da margem inferior externa terá 16pixels.
+#home h4 {*/
 }
 
 section header h2 {
@@ -103,17 +108,17 @@ section header h2 {
 }
 
 section header h1 {
-  /*seletor h1 terá a fonte de 34pixels(relativos)
-puxa a cor variavel do seletor root da pagina
-modifica o espaçamento das letras de 13% dentro do bloco
-e o espaçamento da margem inferior externa terá 24pixels.
 
-#home h1 {*/
   font-size: 3.4rem;
   color: var(--headline);
   line-height: 130%;
 
   margin-bottom: 2.4rem;
+    /*seletor h1 terá a fonte de 34pixels(relativos)
+puxa a cor variavel do seletor root da pagina
+modifica o espaçamento das letras de 13% dentro do bloco
+e o espaçamento da margem inferior externa terá 24pixels.
+#home h1 {*/
 }
 
 section .content p {
@@ -148,11 +153,23 @@ section .content p {
   text-decoration: none;
 
   transition: background 200ms;
+  /*seletor button puxa a cor variavel do seletor root da pagina
+retira a borda do button
+aredondamento das bordas laterais em 40pixels(relativos)
+com margem de 60pixels(relativos)
+altura de 62pixels e largura de 263pixels(relativos)
+cor da fonte branca com 14 pixels(relativos)
+modifica a intenssidae da cor da fonte em 700
+transforma o texto em maiúscula
+alinha o conteudo do bloco conforme o modelo flex box
+alinha os itens centralizados e justifica o conteudo ao centro
+cria separação entre os itens no bloco
+margem do botão direita e esquerda automatica(centralizado) */
 }
 
 .button:hover {
   background-color: var(--brand-dark);
-  /*alterna a cor do elemento button para outra cor*/
+  /*alterna a cor do elemento background button para outra cor*/
 }
 
 .social-links {
@@ -164,39 +181,38 @@ section .content p {
 
 #services .card circle {
   fill: var(--brand-light);
+  /*muda a cor bakground dos circle da parte card(geral)*/
 }
 
 #navigation .logo path[fill*='#00856F'],
 #backToTopButton circle {
   fill: var(--primary-color);
+  /*muda a cor da segunda parte do svg 
+  superior esquerdo e o circle lateral*/
 }
 
 button.open-menu path[stroke*='#00856F'],
 #contact li path {
   stroke: var(--primary-color);
+  /*muda a cor do botão superior direito(responsivo)*/
 }
+
 
 body.menu-expanded #navigation .logo path,
 #navigation.scroll .logo path {
   fill: white;
+  /*muda a cor das letras svg superior esquerda (geral)*/
 }
 
 #navigation.scroll button.open-menu path[stroke*='#00856F'] {
   stroke: white;
+  /*muda a cor do seletor superior para abertura de menu (responsivo)*/
 }
 
 /*=====NAVIGATION=========================================*/
 nav {
   display: flex;
-
   height: var(--nav-height);
-  /*padding: 1.6rem 2.4rem; padding simplificado para cima
-e laterais*/
-  /*
-padding(relativo)
-padding-inline: 2.4rem;
-padding-block: 1.6rem;
-*/
   position: fixed;
   /*fixa o conteudo na tela(neste caso para rolagem)*/
   top: 0;
@@ -250,8 +266,8 @@ body.menu-expanded .close-menu {
 }
 
 .menu {
-  /*comando joga o menu para baixo e fora da tela*/
   transform: translateY(100%);
+  /*comando joga o menu para baixo e fora da tela*/
 }
 
 body.menu-expanded .menu {
@@ -263,10 +279,10 @@ body.menu-expanded .menu {
   height: 100vh;
 
   padding-top: var(--nav-height);
-  /*comando trás de volta o menu para cima para o ponto zero
-em 300 mile segundos*/
+  
   transition: transform 300ms;
   transform: translateY(0);
+  /*comando faz a transição em 300 mile segundos trás e de volta o menu para cima para o ponto zero*/
 }
 
 .menu ul:nth-child(1) {
@@ -284,6 +300,7 @@ em 300 mile segundos*/
 .menu ul li a {
   color: white;
   text-decoration: none;
+  /*muda a cor das letras do menu lista do scroll (responsivo)*/
 }
 
 .menu .button {
@@ -323,17 +340,19 @@ body.menu-expanded .logo path {
 
 body.menu-expanded button path {
   stroke: white;
+  /*botão X para fechar aba superior responsiva*/
 }
 
 /*=====HOME=============================================*/
 
-/*seletor home determina a largura da área do conteúdo em 375pixels(relativos),
-margem direita e esquerda(automatico) 
-e margem acima tenha 41pixels.
-*/
+
 #home {
   padding: 0;
   padding-top: calc(4.1rem + var(--nav-height));
+  /*seletor home determina a largura da área do conteúdo em 375pixels(relativos),
+margem direita e esquerda(automatico) 
+e margem acima tenha 41pixels.
+*/
 }
 
 #home::before {
@@ -353,11 +372,7 @@ e margem acima tenha 41pixels.
   margin-inline: auto;
 }
 
-/*seletor parágrafo terá a fonte de 18pixels(relativos)
-terá um espaçamento das letras de 150% dentro do bloco
-modifica a intenssidae da cor da fonte em 400
-puxa a cor variavel do seletor root da pagina
-e o espaçamento da margem inferior externa terá 32pixels(relativos).*/
+
 #home p {
   font-size: 1.8rem;
   line-height: 150%;
@@ -365,22 +380,13 @@ e o espaçamento da margem inferior externa terá 32pixels(relativos).*/
   color: var(--paragraph);
 
   margin-bottom: 3.2rem;
+  /*seletor parágrafo terá a fonte de 18pixels(relativos)
+terá um espaçamento das letras de 150% dentro do bloco
+modifica a intenssidae da cor da fonte em 400
+puxa a cor variavel do seletor root da pagina
+e o espaçamento da margem inferior externa terá 32pixels(relativos).*/
 }
 
-/*seletor button puxa a cor variavel do seletor root da pagina
-retira a borda do button
-aredondamento das bordas laterais em 40pixels(relativos)
-com margem de 60pixels(relativos)
-altura de 62pixels e largura de 263pixels(relativos)
-cor da fonte branca com 14 pixels(relativos)
-modifica a intenssidae da cor da fonte em 700
-transforma o texto em maiúscula
-alinha o conteudo do bloco conforme o modelo flex box
-alinha os itens centralizados e justifica o conteudo ao centro
-cria separação entre os itens no bloco
-margem do botão direita e esquerda automatica(centralizado)
-
- */
 
 #home img {
   width: 26.4rem;
