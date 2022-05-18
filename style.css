@@ -6,9 +6,7 @@ esta pagina equivale a 1rem*/
 
 /*=====GERAL==============================================*/
 
-
 * {
-  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,7 +20,7 @@ esta pagina equivale a 1rem*/
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
 
-  --brand-beige: hsl(39, 100%, 97%);
+  --brand-beige: hsl(0, 0%, 100%);
   --brand-light: hsl(calc(var(--hue) - 22), 23%, 89%);
   --brand-light-2: hsl(calc(var(--hue) + 10), 14%, 97%);
   --brand-dark: hsl(var(--hue), 100%, 14%);
@@ -47,7 +45,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 
 body {
   font-family: 'DM Sans';
@@ -82,8 +79,7 @@ section {
 }
 
 section header h4 {
-  
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 150%;
   letter-spacing: 0.08em;
@@ -108,13 +104,12 @@ section header h2 {
 }
 
 section header h1 {
-
   font-size: 3.4rem;
   color: var(--headline);
   line-height: 130%;
 
   margin-bottom: 2.4rem;
-    /*seletor h1 terá a fonte de 34pixels(relativos)
+  /*seletor h1 terá a fonte de 34pixels(relativos)
 puxa a cor variavel do seletor root da pagina
 modifica o espaçamento das letras de 13% dentro do bloco
 e o espaçamento da margem inferior externa terá 24pixels.
@@ -197,7 +192,6 @@ button.open-menu path[stroke*='#00856F'],
   /*muda a cor do botão superior direito(responsivo)*/
 }
 
-
 body.menu-expanded #navigation .logo path,
 #navigation.scroll .logo path {
   fill: white;
@@ -279,7 +273,7 @@ body.menu-expanded .menu {
   height: 100vh;
 
   padding-top: var(--nav-height);
-  
+
   transition: transform 300ms;
   transform: translateY(0);
   /*comando faz a transição em 300 mile segundos trás e de volta o menu para cima para o ponto zero*/
@@ -345,7 +339,6 @@ body.menu-expanded button path {
 
 /*=====HOME=============================================*/
 
-
 #home {
   padding: 0;
   padding-top: calc(4.1rem + var(--nav-height));
@@ -372,7 +365,6 @@ e margem acima tenha 41pixels.
   margin-inline: auto;
 }
 
-
 #home p {
   font-size: 1.8rem;
   line-height: 150%;
@@ -387,12 +379,12 @@ puxa a cor variavel do seletor root da pagina
 e o espaçamento da margem inferior externa terá 32pixels(relativos).*/
 }
 
-
 #home img {
   width: 26.4rem;
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
+  margin-bottom: 9rem;
 }
 
 #home .stats {
@@ -401,6 +393,7 @@ e o espaçamento da margem inferior externa terá 32pixels(relativos).*/
   /*padding-top: 4rem;
   padding-bottom: 4rem;*/
   margin-inline: auto;
+  margin-top: 2rem;
 
   background-color: var(--brand-beige);
   border: 1px solid var(--brand-light);
@@ -510,11 +503,13 @@ footer .logo {
 
 footer .logo svg {
   width: 23.6rem;
-  height: 3.1rem;
+  height: 3.2rem;
+  /*define a largura do elemento dentro da borda e o espaçamento da borda lateral*/
 }
 
 footer .logo path {
   fill: white;
+  /*define a cor do svg na parte inferior esquerda da pagina*/
 }
 
 footer p {
@@ -747,6 +742,7 @@ footer .social-links {
 
   #home img {
     width: 42rem;
+    padding-top: 5rem;
   }
 
   /*=====SERVICES=========================================*/

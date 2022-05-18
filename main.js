@@ -1,6 +1,5 @@
 window.addEventListener('scroll', onScroll)
 
-// adiciona um scroll na tela quando for maior que o ponto zero se não remove o scroll no ponto zero //
 onScroll()
 function onScroll() {
   showNavOnScroll()
@@ -10,6 +9,7 @@ function onScroll() {
   activateMenuAtCurrentSection(services)
   activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
+  // adiciona um scroll na tela quando for maior que o ponto zero se não remove o scroll no ponto zero //
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -66,15 +66,17 @@ function showBackToTopButtonOnScroll() {
     backToTopButton.classList.remove('show')
   }
 }
-/*abre o menu do elemento menu-expanded*/
+
 function openMenu() {
   document.body.classList.add('menu-expanded')
+  /*abre o menu do elemento menu-expanded*/
 }
-/*retira o menu do elemento menu-expanded*/
+
 function closeMenu() {
   document.body.classList.remove('menu-expanded')
+  /*retira o menu do elemento menu-expanded*/
 }
-/*cria interação de revelação com o conteùdo da tela*/
+
 ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -89,3 +91,4 @@ ScrollReveal({
   #about, 
   #about header, 
   #about .content`)
+/*cria interação de revelação com o conteùdo da tela*/
