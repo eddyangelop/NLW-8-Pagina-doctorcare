@@ -15,7 +15,7 @@ esta pagina equivale a 1rem*/
 }
 
 :root {
-  --hue: 205;
+  --hue: 220;
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
@@ -31,8 +31,8 @@ esta pagina equivale a 1rem*/
 
   --nav-height: 7.2rem;
   /*seletor root introduz cores que podem ser modificados em
-todo o corpo da pagina a partir do proprio root
-e fonte padrão da pagina é mudada em porcentagem equivalente a 10pixels.*/
+  todo o corpo da pagina a partir do proprio root
+  e fonte padrão da pagina é mudada em porcentagem   equivalente a 10pixels.*/
 }
 
 html {
@@ -56,8 +56,8 @@ body {
 
   background-color: var(--bg-light);
   /*seletor body modifica a fonte para DM Sans,
-muda o tamanho da fonte para 16pixels(relativos)
-e alinha o texto ao centro.*/
+  muda o tamanho da fonte para 16pixels(relativos)
+  e alinha o texto ao centro.*/
 }
 
 .wrapper {
@@ -89,9 +89,9 @@ section header h4 {
 
   margin-bottom: 1.6rem;
   /*seletor h4 terá a fonte de 14pixels(relativos)
-puxa a cor variavel do seletor root da pagina
-e o espaçamento da margem inferior externa terá 16pixels.
-#home h4 {*/
+  puxa a cor variavel do seletor root da pagina
+  e o espaçamento da margem inferior externa terá 16pixels.
+  #home h4 {*/
 }
 
 section header h2 {
@@ -110,10 +110,10 @@ section header h1 {
 
   margin-bottom: 2.4rem;
   /*seletor h1 terá a fonte de 34pixels(relativos)
-puxa a cor variavel do seletor root da pagina
-modifica o espaçamento das letras de 13% dentro do bloco
-e o espaçamento da margem inferior externa terá 24pixels.
-#home h1 {*/
+  puxa a cor variavel do seletor root da pagina
+  modifica o espaçamento das letras de 13% dentro do bloco
+  e o espaçamento da margem inferior externa terá 24pixels.
+  #home h1 {*/
 }
 
 section .content p {
@@ -149,17 +149,23 @@ section .content p {
 
   transition: background 200ms;
   /*seletor button puxa a cor variavel do seletor root da pagina
-retira a borda do button
-aredondamento das bordas laterais em 40pixels(relativos)
-com margem de 60pixels(relativos)
-altura de 62pixels e largura de 263pixels(relativos)
-cor da fonte branca com 14 pixels(relativos)
-modifica a intenssidae da cor da fonte em 700
-transforma o texto em maiúscula
-alinha o conteudo do bloco conforme o modelo flex box
-alinha os itens centralizados e justifica o conteudo ao centro
-cria separação entre os itens no bloco
-margem do botão direita e esquerda automatica(centralizado) */
+  retira a borda do button
+  aredondamento das bordas laterais em 40pixels(relativos)
+  com margem de 60pixels(relativos)
+  altura de 62pixels e largura de 263pixels(relativos)
+  cor da fonte branca com 14 pixels(relativos)
+  modifica a intenssidae da cor da fonte em 700
+  transforma o texto em maiúscula
+  alinha o conteudo do bloco conforme o modelo flex box
+  alinha os itens centralizados e justifica o conteudo ao   centro
+  cria separação entre os itens no bloco
+  margem do botão direita e esquerda automatica(centralizado)   */
+}
+
+.button img {
+  width: 2rem;
+
+   /*img whatapp adicionada no button*/
 }
 
 .button:hover {
@@ -343,9 +349,9 @@ body.menu-expanded button path {
   padding: 0;
   padding-top: calc(4.1rem + var(--nav-height));
   /*seletor home determina a largura da área do conteúdo em 375pixels(relativos),
-margem direita e esquerda(automatico) 
-e margem acima tenha 41pixels.
-*/
+  margem direita e esquerda(automatico) 
+  e margem acima tenha 41pixels.
+  */
 }
 
 #home::before {
@@ -373,10 +379,10 @@ e margem acima tenha 41pixels.
 
   margin-bottom: 3.2rem;
   /*seletor parágrafo terá a fonte de 18pixels(relativos)
-terá um espaçamento das letras de 150% dentro do bloco
-modifica a intenssidae da cor da fonte em 400
-puxa a cor variavel do seletor root da pagina
-e o espaçamento da margem inferior externa terá 32pixels(relativos).*/
+  terá um espaçamento das letras de 150% dentro do bloco
+  modifica a intenssidae da cor da fonte em 400
+  puxa a cor variavel do seletor root da pagina
+  e o espaçamento da margem inferior externa terá 32pixels  (relativos).*/
 }
 
 #home img {
@@ -384,7 +390,7 @@ e o espaçamento da margem inferior externa terá 32pixels(relativos).*/
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
-  margin-bottom: 9rem;
+  margin-bottom:0rem;
 }
 
 #home .stats {
@@ -393,7 +399,7 @@ e o espaçamento da margem inferior externa terá 32pixels(relativos).*/
   /*padding-top: 4rem;
   padding-bottom: 4rem;*/
   margin-inline: auto;
-  margin-top: 2rem;
+  margin-top: 0rem;
 
   background-color: var(--brand-beige);
   border: 1px solid var(--brand-light);
@@ -402,8 +408,9 @@ e o espaçamento da margem inferior externa terá 32pixels(relativos).*/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap separação entre os elementos do bloco*/
+ 
   gap: 6rem;
+   /* gap separação entre os elementos do bloco*/
 }
 
 #home .stat h3 {
@@ -504,7 +511,7 @@ footer .logo {
 footer .logo svg {
   width: 23.6rem;
   height: 3.2rem;
-  /*define a largura do elemento dentro da borda e o espaçamento da borda lateral*/
+  /*define a largura do elemento dentro da borda e o espaçamento da borda*/
 }
 
 footer .logo path {
@@ -514,14 +521,21 @@ footer .logo path {
 
 footer p {
   color: var(--brand-beige);
-  /*line-height dá um espaçamento no texto*/
+  
   line-height: 2;
   margin-bottom: 3.2rem;
+  /*line-height dá um espaçamento no texto*/
 }
 
 footer .social-links {
   justify-content: flex-start;
 }
+
+footer .social-links img {
+  width: 2.3rem;
+  /*img adicionada no social-links*/
+}
+
 
 /*BACK TO TOP*/
 
@@ -558,10 +572,12 @@ footer .social-links {
 
   .col-a {
     grid-area: A;
+
   }
 
   .col-b {
     grid-area: B;
+    
   }
 
   section {
