@@ -118,10 +118,11 @@ section header h1 {
 
 section .content p {
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 150%;
 
   color: var(--paragraph);
+  /*modifica tag p da estrutura about (responsivo)*/
 }
 
 .button {
@@ -468,11 +469,13 @@ body.menu-expanded button path {
 #about .content p {
   margin-top: 2.4rem;
   margin-bottom: 6rem;
+  
 }
 
 /*=====CONTACT==========================================*/
 #contact {
   text-align: left;
+  padding-bottom: 0;
 }
 
 #contact header {
@@ -733,7 +736,8 @@ footer .social-links img {
   }
 
   #home .content p {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    /*almenta a fonte do paragrafo home(acima de 1024px)*/
   }
 
   #home .stats {
@@ -792,6 +796,8 @@ footer .social-links img {
   #about .content p {
     margin-bottom: 0;
   }
+
+
 
   /*=====CONTACT=========================================*/
 
