@@ -8,6 +8,7 @@ function onScroll() {
   activateMenuAtCurrentSection(home)
   activateMenuAtCurrentSection(services)
   activateMenuAtCurrentSection(about)
+  activateMenuAtCurrentSection(mission)
   activateMenuAtCurrentSection(contact)
   // adiciona um scroll na tela quando for maior que o ponto zero se não remove o scroll no ponto zero //
 }
@@ -90,5 +91,8 @@ ScrollReveal({
   #services .card
   #about, 
   #about header, 
-  #about .content`)
+  #about .content,
+  #mission,
+  #mission header,
+  #mission .content`)
 /*cria interação de revelação com o conteùdo da tela*/

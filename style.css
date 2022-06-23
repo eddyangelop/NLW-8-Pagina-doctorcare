@@ -166,7 +166,7 @@ section .content p {
 .button img {
   width: 2rem;
 
-   /*img whatapp adicionada no button*/
+  /*img whatapp adicionada no button*/
 }
 
 .button:hover {
@@ -391,7 +391,7 @@ body.menu-expanded button path {
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
-  margin-bottom:0rem;
+  margin-bottom: 0rem;
 }
 
 #home .stats {
@@ -409,9 +409,9 @@ body.menu-expanded button path {
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
+
   gap: 6rem;
-   /* gap separação entre os elementos do bloco*/
+  /* gap separação entre os elementos do bloco*/
 }
 
 #home .stat h3 {
@@ -469,7 +469,21 @@ body.menu-expanded button path {
 #about .content p {
   margin-top: 2.4rem;
   margin-bottom: 6rem;
-  
+}
+
+/*=====MISSION==========================================*/
+#mission {
+  text-align: left;
+  background-color: var(--brand-beige);
+}
+
+#mission header h2 {
+  margin-bottom: 2.4rem;
+}
+
+#mission .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
 }
 
 /*=====CONTACT==========================================*/
@@ -524,7 +538,7 @@ footer .logo path {
 
 footer p {
   color: var(--brand-beige);
-  
+
   line-height: 2;
   margin-bottom: 3.2rem;
   /*line-height dá um espaçamento no texto*/
@@ -538,7 +552,6 @@ footer .social-links img {
   width: 2.3rem;
   /*img adicionada no social-links*/
 }
-
 
 /*BACK TO TOP*/
 
@@ -575,12 +588,10 @@ footer .social-links img {
 
   .col-a {
     grid-area: A;
-
   }
 
   .col-b {
     grid-area: B;
-    
   }
 
   section {
@@ -797,7 +808,21 @@ footer .social-links img {
     margin-bottom: 0;
   }
 
+  /*=====MISSION=========================================*/
+  #mission .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
+  }
 
+  #mission .col-a {
+    align-self: center;
+  }
+
+  #mission .content p {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+  }
 
   /*=====CONTACT=========================================*/
 
